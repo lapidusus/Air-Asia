@@ -1,5 +1,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    display: block;
+    margin: 0px;
 }
 
 .container {
@@ -8,13 +10,13 @@ body {
 }
 
 .main-page-wrapper {
-    background: url("./img/mainone.png") center top no-repeat, url("./img/maintwo.png") center bottom 200px no-repeat;
+    background: url("./img/mainone.png") center top no-repeat, url("./img/maintwo.png") center bottom 320px no-repeat;
     background-color: #001821;
 }
 
 .header {
     position: relative;
-    height: 120px;
+    min-height: 120px;
     display: flex;
     margin-bottom: 49px;
 }
@@ -66,6 +68,10 @@ p {
     margin-right: 50px;
 }
 
+.menu__item:last-child {
+    margin-right: 0px;
+}
+
 .menu__title {
     font-size: 14px;
     text-decoration: none;
@@ -84,7 +90,7 @@ p {
 
 .contacts__workhours {
     position: absolute;
-    top: 28px;
+    top: 33px;
     right: 2px;
     font-size: 13px;
     color: #FFFFFF;
@@ -93,6 +99,7 @@ p {
 
 .hello {
     width: 511px;
+    margin-bottom: 56px;
 }
 
 .hello__title {
@@ -119,7 +126,6 @@ p {
     padding: 18px 40px;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 47.5px;
     display: inline-block;
 }
 
@@ -133,12 +139,11 @@ p {
     font-weight: bold;
     margin-bottom: 51px;
     margin-top: 198px;
+    margin-right: 9px;
 }
-.tours__title-image {
-    position: absolute;
-    left: 391px;
-    top: 770px;
-    display: block;
+
+.tours__hot-title, .tours__hot-img {
+    display: inline-block;
 }
 
 .tours__item {
@@ -170,16 +175,12 @@ p {
     color: #000;
 }
 
-.tours__item-section {
-    margin-bottom: -17px;
-}
-
 .tours__item-subject {
     display: inline-block;
     vertical-align: top;
     color: #666666;
     font-size: 16px;
-    width: 116px;
+    width: 145px;
 }
 
 .tours__item-subject:last-child {
@@ -187,6 +188,7 @@ p {
 }
 
 .tours__item-image {
+    display: inline-block;
     margin-right: 10px;
 }
 
@@ -199,7 +201,6 @@ p {
     font-size: 14px;
     font-weight: 400;
     width: 324px;
-    height: 63px;
     margin-bottom: 41px;
     line-height: 21px;
     margin-top: 13px;
@@ -295,13 +296,13 @@ p {
 
 .paginator {
     text-align: center;
+    margin-top: 52px;
+    margin-bottom: 152px;
 }
 
 .paginator__display,.paginator__list {
     display: inline-block;
     vertical-align: middle;
-    margin-top: 52px;
-    margin-bottom: 84px;
 }
 
 .paginator__display {
@@ -342,6 +343,10 @@ p {
     width: 490px;
     height: 502px;
     background: url("./img/gates.png") center center / cover no-repeat;
+}
+
+.about__content {
+    margin-bottom: -13px;
 }
 
 .about__desc {
@@ -386,37 +391,37 @@ p {
     position: relative;
 }
 
-.footer-logo {
+.footer .logo {
     position: absolute;
     top: 3px;
     left: 0;
 }
 
-.footer-menu {
+.footer .menu {
     position: absolute;
     top: 13px;
     left: 164px;
 }
 
-.footer-contacts {
+.footer .contacts {
     position: absolute;
     top: 3px;
     right: 0;
 }
 
-.footer-menu__item {
+.footer .menu__item {
     display: inline-block;
     vertical-align: middle;
     margin-right: 50px;
 }
 
-.footer-menu__title {
+.footer .menu__title {
     font-size: 14px;
     text-decoration: none;
     color: #FFFFFF;
 }
 
-.footer-contacts {
+.footer .contacts {
     font-style: normal;
     text-align: right;
     position: absolute;
@@ -424,17 +429,16 @@ p {
     right: 0;
 }
 
-.footer-contacts__workhours {
+.footer .contacts__workhours {
     position: absolute;
-    top: -29px;
+    top: -20px;
     right: 2px;
     font-size: 11px;
     color: #9A9A9A;
     text-decoration: none;
 }
 
-.footer-contacts__phone {
-    margin-top: 0px;
+.footer .contacts__phone {
     text-decoration: none;
     font-size: 26px;
     color: #FFFFFF;
