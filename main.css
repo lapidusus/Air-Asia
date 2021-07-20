@@ -324,7 +324,12 @@ img {
 }
 
 .paginator--theme--light {
+    padding-bottom: 0px;
     color: #000000;
+}
+
+.paginator--theme--light .paginator__display, .paginator--theme--light .paginator__link {
+    color: black;
 }
 
 .paginator--theme--light .paginator__item-active .paginator__link {
@@ -418,10 +423,10 @@ img {
 }
 
 .footer {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
     height: 146px;
     align-items: center;
     position: relative;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer .logo {
@@ -681,7 +686,7 @@ img {
     background: #fff;
     color: #1A1B1E;
     padding: 71px 0;
-    margin-bottom: 45px;
+    margin-bottom: 5px;
 }
 
 .inner-section--bg--grey {
@@ -721,5 +726,6 @@ img {
 }
 
 .footer-container {
+    border-top: none;
     margin-top: 48px;
 }
