@@ -394,7 +394,7 @@ img {
     padding: 80px 98px;
     margin-left: 351px;
     margin-top: -400px;
-    margin-bottom: 100px;
+    margin-bottom: 63px;
 }
 
 .about__title {
@@ -423,6 +423,7 @@ img {
 }
 
 .footer {
+    display: flex;
     height: 146px;
     align-items: center;
     position: relative;
@@ -430,15 +431,12 @@ img {
 }
 
 .footer .logo {
-    position: absolute;
     top: 3px;
     left: 0;
 }
 
 .footer .menu {
-    position: absolute;
-    top: 13px;
-    left: 164px;
+    margin-right: 234px;
 }
 
 .footer .contacts {
@@ -462,7 +460,7 @@ img {
 .footer .contacts {
     font-style: normal;
     text-align: right;
-    top: 9px;
+    top: 60px;
     right: 0;
 }
 
@@ -488,9 +486,6 @@ img {
 
 .socials__list {
     display: flex;
-    justify-content: flex-end;
-    margin-right: 265px;
-    margin-top: 12px;
 }
 
 .socials__item {
@@ -727,5 +722,4 @@ img {
 
 .footer-container {
     border-top: none;
-    margin-top: 48px;
 }
