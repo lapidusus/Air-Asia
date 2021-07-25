@@ -106,12 +106,42 @@ img {
     color: #FFFFFF;
 }
 
+.dropdown {
+    position: relative;
+}
+
+.dropdown:hover .dropdown__menu {
+    left: 0px;
+    opacity: 1;
+}
+
 .contacts__workhours {
     display: flex;
     justify-content: flex-end;
     font-size: 13px;
     color: #FFFFFF;
     text-decoration: underline;
+}
+
+.dropdown__menu {
+    position: absolute;
+    background: url("./img/triangle.png") center center no-repeat;
+    padding: 28px 23px;
+    width: 175px;
+    height: 80px;
+    top: 100%;
+    opacity: 0;
+    transition: opacity .4s;
+    left: -9999px;
+}
+
+.dropdown__item {
+    font-size: 13px;
+    color: #1E1F20;
+}
+
+.dropdown__item--bold {
+    font-weight: 700;
 }
 
 .hello {
@@ -270,9 +300,11 @@ img {
     margin-bottom: 51px;
 }
 
+.news__list {
+    display: flex;
+}
+
 .news__item {
-    display: inline-block;
-    vertical-align: top;
     margin-right: 22px;
     width: 557px;
     height: 394px;
@@ -450,8 +482,6 @@ img {
 }
 
 .footer .menu__item {
-    display: inline-block;
-    vertical-align: middle;
     margin-right: 50px;
 }
 
@@ -694,7 +724,6 @@ img {
     background: #fff;
     color: #1A1B1E;
     padding: 71px 0;
-    margin-bottom: 5px;
 }
 
 .inner-section--bg--grey {
@@ -742,6 +771,7 @@ img {
 .reviews {
     column-count: 2;
     column-gap: 30px;
+    margin-bottom: -20px;
 }
 
 .reviews__item {
@@ -775,11 +805,14 @@ img {
     height: 29px;
 }
 
+.review__photo {
+    margin-right: 22px;
+}
+
 .avatar {
     width: 140px;
     height: 140px;
     overflow: hidden;
-    margin-right: 22px;
 }
 
 .review__tags {
@@ -897,6 +930,19 @@ img {
     margin-right: 7px;
 }
 
+.controls__item:nth-child(5) {
+    margin-right: 0;
+}
+
+.controls__item:nth-child(6) {
+    margin-bottom: 0;
+}
+
+.controls__item:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
 .controls__elem {
     cursor: pointer;
 }
@@ -916,6 +962,7 @@ img {
 
 .form__btn {
     margin-right: 20px;
+    margin-bottom: 0;
 }
 
 .form__btn:last-child {
@@ -926,7 +973,6 @@ img {
 
 .welcome {
     display: flex;
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
