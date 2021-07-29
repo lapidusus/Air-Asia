@@ -96,6 +96,10 @@ img {
     color: #FFFFFF;
 }
 
+.menu__title--active {
+    color: #F5170E;
+}
+
 .contacts {
     font-style: normal;
 }
@@ -128,7 +132,6 @@ img {
     background: url("./img/triangle.png") center center no-repeat;
     padding: 28px 23px;
     width: 175px;
-    height: 80px;
     top: 100%;
     opacity: 0;
     transition: opacity .4s;
@@ -491,6 +494,10 @@ img {
     color: #FFFFFF;
 }
 
+.footer .menu__title--active {
+    color: #F5170E;
+}
+
 .footer .contacts {
     font-style: normal;
     text-align: right;
@@ -672,10 +679,6 @@ img {
     text-transform: uppercase;
     font-size: 14px;
     cursor: pointer;
-}
-
-.btn__link--color--grey {
-    background: #2B2B2B;
 }
 
 .pager {
@@ -960,12 +963,25 @@ img {
     justify-content: flex-end;
 }
 
-.form__btn {
-    margin-right: 20px;
-    margin-bottom: 0;
+.button {
+    background: #F5170E;
+    border: 1px solid #fff;
+    border-radius: 35px;
+    padding: 14px 28px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 17px;
 }
 
-.form__btn:last-child {
+.button--color-grey {
+    background: #2B2B2B;
+}
+
+.button:last-child {
     margin-right: 0;
 }
 
